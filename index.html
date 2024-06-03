@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flye assisment</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f91225a242.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="top width">
+        <div class="container">
+            
+            <div class="top_message">
+                <h3>AWARD WINNING</h3>
+                <h1>DIGITAL MAKETING AGENCY</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium voluptate repellendus labore? Quasi, at autem accusantium aperiam, excepturi </p>
+                <button class="btn">Contact us</button>
+            </div>
+            <img src="images/c6.png" class="img-thumbnail" alt="...">
+        </div>
+    </div>
+    <div class="popup" id="popup">
+      <form action="https://getform.io/f/pamqloea" method="POST">
+          <h1>Talk to us</h1>
+          <input type="email" name="email" placeholder="Work email" class="contact_input" required>
+          <input type="text" name="name" placeholder="First name" class="contact_input" required>
+          <input type="text" name="Lastname" placeholder="Last name" class="contact_input" required>
+          <div class="checkbox-container">
+              <input type="checkbox" name="agreed" id="agreed" required>
+              <label for="agreed">I agree to Flye's terms and conditions, and provide consent to send me communication</label>
+          </div>
+          <button type="submit">Contact Us</button>
+      </form>
+  </div>
+  
+  <!-- Overlay for the popup -->
+  <div id="overlay"></div>
+  
+    </div>
+    <div class="middle width">
+      <div>
+        <h3 style="margin-bottom: 40px;">WHAT WE DO</h3>
+      <h1 class="mid_h" style="margin-bottom: 20px;">SERVICES PROVIDE FOR YOU</h1>
+      </div>
+      <div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis inventore obcaecati non corrupti, neque totam!</p>
+      </div>
+      <div class="services-container" style="display: flex; height: 410px;">
+        <img src="images/c1.png" class="img-thumbnail service-img animate" alt="...">
+        <img src="images/c2.png" class="img-thumbnail service-img animate" alt="...">
+        <div class="MiddleCard animate" style="width: 18rem; height: 400px;">
+          <div class="card-body">
+              <i class="fa-solid fa-terminal"></i>
+              <h5 class="card-title" style="margin-bottom: 30px;">Web development</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="https://www.fylehq.com/" class="readMore" >Read more --></a>
+          </div>
+      </div>
+        <img src="images/c3.png" class="img-thumbnail service-img animate" alt="...">
+        
+    </div>
+    
+  </div>
+  
+  <div class="best width">
+    <div class="Bhead">
+        <h3 style="margin-top: 260px;">Our Project</h3>
+        <h1>Why We Are Best</h1>
+    </div>
+    <div class="content">
+        <div class="image-container">
+            <img id="mainImage" src="images/c9.png" class="img-thumbnail" alt="Main Image">
+        </div>
+        <div class="cards">
+            <div class="card" onclick="changeImage('images/c9.png')">
+                <div class="card-body">
+                    <h5 class="card-title">Genderless Kei - Japan's Hot</h5>
+                    <p class="card-text">Set to launch on the manufacturer's new A330neo aircraft in 2017, it's offering lots of</p>
+                </div>
+            </div>
+            <div class="card active" onclick="changeImage('images/c7.jpg')">
+                <div class="card-body">
+                    <h5 class="card-title">Better Strategy & Quality</h5>
+                    <p class="card-text">Set to launch on the manufacturer's new A330neo aircraft in 2017, it's offering lots of</p>
+                </div>
+            </div>
+            <div class="card" onclick="changeImage('images/c8.jpg')">
+                <div class="card-body">
+                    <h5 class="card-title">Genderless Kei - Japan's Hot</h5>
+                    <p class="card-text">Set to launch on the manufacturer's new A330neo aircraft in 2017, it's offering lots of</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function changeImage(src) {
+        document.getElementById('mainImage').src = src;
+        const cards = document.querySelectorAll('.card');
+        cards.forEach(card => card.classList.remove('active'));
+        event.currentTarget.classList.add('active');
+    }
+</script>
+        <div class="Gheader" style="text-align: center;">
+          <h5 style="margin-top: 300px;">EXPERTS GROWTH</h5>
+          <h2>OUR COMPANY GROWTH</h2>
+      </div>
+        <div class="width growthCard">
+        
+          <div class="row">
+              <div class="col">
+                  <div class="card">
+                      <div class="card-body">
+                          <i class="fa-solid fa-heart"></i>
+                          <h5 class="card-title">199 +</h5>
+                          <p>Statisfied Customers</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="card">
+                      <div class="card-body">
+                          <i class="fa-solid fa-clock"></i>
+                          <h5 class="card-title">1591+</h5>
+                          <p>Days Of Operation</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="card">
+                      <div class="card-body">
+                          <i class="fa-solid fa-circle-check"></i>
+                          <h5 class="card-title">283 +</h5>
+                          <p>Complete Project</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="card">
+                      <div class="card-body">
+                          <i class="fa-solid fa-trophy"></i>
+                          <h5 class="card-title">75+</h5>
+                          <p>Win Awards</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <footer id="footer">
+
+
+        <i class="fa-brands fa-twitter footer-icon" ></i>
+        <i class="fa-brands fa-instagram footer-icon"></i>
+        <i class="fa-brands fa-facebook footer-icon"></i>
+        <i class="fa-brands fa-linkedin footer-icon"></i>
+  
+  
+      <p>© Copyright fyle</p>
+  
+    </footer>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</html>

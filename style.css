@@ -1,0 +1,404 @@
+*{
+    border: 0px;
+    padding: opx;
+}
+h3{
+    color: rgb(237, 65, 85);
+}
+body{
+    overflow-x: hidden;
+}
+.width{
+    width: 90%;
+    display: inline;
+    align-items: center;
+    text-align: center;
+}
+.mid_h{
+    align-items: left;
+}
+.top.width {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.top_message {
+    margin-left: 40px;
+    max-width: 50%;
+    text-align: left;
+}
+
+.top_message h3 {
+    margin: 0;
+    font-size: 24px;
+    color: rgb(237, 65, 85); /* Red color for the heading */
+}
+
+.top_message p{
+    padding: 5px;
+}
+
+.top_message h1 {
+    margin: 10px 0;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.top_message p {
+    margin: 20px 0;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.top{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.btn{
+    background-color: rgb(237, 65, 85);
+    color: white;
+    border: none;
+    padding: 15px 30px; /* Increased padding for a wider button */
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    background-color: rgb(237, 65, 85);
+    color: black;
+}
+
+.img-thumbnail {
+    max-width: 50%;
+    height: auto;
+    border: none; /* Remove default border */
+    border-radius: 0; /* Remove default border radius */
+}
+
+/* Popup form styling */
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    display: none;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1001;
+    width: 800px;
+    display: none;
+}
+
+.popup h1 {
+    margin-bottom: 40px;
+}
+
+.popup input[type="email"],
+.popup input[type="text"] {
+    width: calc(50% - 10px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.popup input[type="email"] {
+    margin-right: 20px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.checkbox-container input {
+    margin-right: 10px;
+    color: rgb(237, 65, 85);
+}
+
+.popup button {
+    background-color: rgb(237, 65, 85);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.MiddleCard{
+   
+    background-color: rgb(237, 65, 85);  
+    text-align: center;  
+    justify-content: center;
+    padding: 30px;
+}
+
+.readMore{
+    white-space: 30px;
+    background-color: white;
+    padding: 10px;
+    margin-top: 400px;
+    text-decoration: none;
+    width: 100px;
+}
+
+.services-container{
+    display: flex;
+    margin-left: 200px;
+}
+
+.card-text{
+    margin-bottom: 100px;
+}
+
+.growthCard{
+    display: flex;
+    
+}
+
+.contact-form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    box-sizing: border-box;
+}
+
+.contact-form h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+}
+
+.contact_input {
+    width: 100%;
+    padding: 10px 5px;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+    color: #333;
+}
+
+.contact_input::placeholder {
+    color: #aaa;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    accent-color: rgb(237, 65, 85); /* Custom checkbox color */
+    margin-right: 10px;
+}
+
+.checkbox-container label {
+    font-size: 14px;
+    color: #333;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(237, 65, 85);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #c94a5b;
+}
+
+.Gheader h5 {
+    color: rgb(237, 65, 85);
+    margin-bottom: 10px;
+}
+
+.Gheader h2 {
+    color: #000;
+    margin-bottom: 40px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+}
+
+.card {
+    background: #fff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-body i {
+    font-size: 40px;
+    color: rgb(237, 65, 85);
+    margin-bottom: 10px;
+}
+
+.card-title {
+    font-size: 30px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.growthCard{
+    margin-left: 220px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+}
+
+.Footer {
+    background-color: #e0263fde;
+    padding: 5%;
+    text-align: center;
+    color: #ffff;
+}
+
+#footer{
+    text-align: center;
+    padding: 5%;
+}
+.footer-icon{
+    margin: 20px 10px;
+}
+
+.footer-icon:hover{
+    background-color: #c94a5b;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.best {
+    text-align: center;
+    width: 80%;
+   
+}
+
+.Bhead h3 {
+    color: rgb(237, 65, 85);
+    margin-bottom: 10px;
+}
+
+.Bhead h1 {
+    color: #000;
+    margin-bottom: 40px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.image-container {
+    flex: 2;
+    padding: 20px;
+}
+
+.image-container img {
+    width: 50%;
+    border-radius: 10px;
+}
+
+.cards {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    width: 80%;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card.active {
+    background: rgb(237, 65, 85);
+    color: #fff;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 14px;
+}
+
+.animate:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+}
